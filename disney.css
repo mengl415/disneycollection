@@ -1,0 +1,200 @@
+body {
+    background-color: #0E1161;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+  }
+  
+  h1 {
+    font-weight: 600;
+    margin: 2rem;
+  }
+
+  .item-container {
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+  }
+  
+  .item.active {
+    display: block;
+  }
+
+  /* aldo */
+  .containerA {
+    padding: 2rem;
+    width: 80%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 3rem;
+  }
+  
+  .aldo-container{
+    color: white;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    margin-bottom: 10rem;
+  }
+
+  .aldo-image{
+    object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    margin-top: 0rem;
+  }
+
+  /* coach */
+  .containerC{
+    padding: 2rem;
+    width: 80%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 3rem;
+  }
+
+  .coach-container {
+    color: white;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    margin-bottom: 10rem;
+  }
+
+  .coach-image{
+    object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  /* estee lauder */
+  .containerE{
+    padding: 2rem;
+    width: 80%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 3rem;
+  }
+
+  .el-container {
+    color: white;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    margin-bottom: 10rem;
+  }
+
+  .el-image{
+    object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  /* gucci */
+  .containerG{
+    padding: 2rem;
+    width: 80%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 3rem;
+  }
+
+  .gucci-container {
+    color: white;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    margin-bottom: 10rem;
+  }
+
+  .gucci-image{
+    object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+/* pandora */
+.containerP {
+    padding: 2rem;
+    width: 80%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 3rem;
+  }
+  
+  .pandora-container{
+    color: white;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    margin-bottom: 10rem;
+  }
+  
+  .pandora-image{
+    object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+
+/* uniqlo */
+  .containerU {
+    padding: 2rem;
+    width: 80%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 3rem;
+  }
+  
+  .uniqlo-container{
+    color: white;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    margin-bottom: 10rem;
+  }
+  
+  .uniqlo-image{
+    object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  /* zara */
+  .containerZ {
+    padding: 2rem;
+    width: 80%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 3rem;
+  }
+  
+  .zara-container{
+    color: white;
+    font-size: 2rem;
+    border: 1px solid transparent;
+  }
+  
+  .zara-image{
+    object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  
+
+
+  
