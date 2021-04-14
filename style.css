@@ -1,0 +1,293 @@
+body {
+    margin: 0rem;
+    background-color: #0E1161;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #B9F1FF;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: #CD7DFF;
+  }
+  
+  #box {
+    position: fixed;
+    border: 1px solid transparent;
+    width: 100%;
+    height: 2rem;
+    padding: 1rem;
+    text-align: center;
+    top: calc(100% - 4.3rem);
+  }
+  
+  .type {
+    font-size: 2rem;
+    color: white;
+    margin-left: 5rem;
+  }
+  
+  #disney {
+    position: absolute;
+    left: calc(12.5% - 11rem);
+  }
+  
+  #mickey {
+    position: absolute;
+    left: calc(87.5% - 11rem);
+  }
+  
+  #princess {
+    position: absolute;
+    color: #373DCF;
+    left: calc(62.5% - 11rem);
+  }
+  
+  #princess:hover {
+    text-decoration: none;
+    color: #B9F1FF;
+  }
+  
+  #princess:active {
+    text-decoration: none;
+    color: #CD7DFF;
+  }
+  
+  #classic {
+    position: absolute;
+    color: #373DCF;
+    left: calc(37.5% - 11rem);
+  }
+  
+  #classic:hover {
+    text-decoration: none;
+    color: #B9F1FF;
+  }
+  
+  #classic:active {
+    text-decoration: none;
+    color: #CD7DFF;
+  }
+  
+  #circleUniqlo {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FGraphic%20Uniqlo.png?v=1617750214524");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    z-index: 15;
+  }
+  
+  #circleCoach {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FGraphic%20Coach.png?v=1617749028825");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  #circleGucci {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FGraphic%20Gucci%202.png?v=1617914564391");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  #circlePandora {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FGraphic%20Pandora.png?v=1617914434229");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #circleZara {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 20;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FGraphic%20Zara.png?v=1617914438543");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #circleZara2 {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 12;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FGraphic%20Zara%202.png?v=1617975413976");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #circleZara3 {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 12;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FGraphic%20Zara%203.png?v=1617975410733");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media only screen and (max-width: 411px) {
+    #box {
+      border: 1px solid transparent;
+      top: calc(100% - 3.5rem);
+    }
+  
+    .type {
+      font-size: 1rem;
+      color: white;
+      margin-left: 2.2rem;
+    }
+  
+    #disney {
+      position: absolute;
+      left: calc(12.5% - 5rem);
+    }
+  
+    #mickey {
+      position: absolute;
+      left: calc(87.5% - 5rem);
+    }
+  
+    #princess {
+      position: absolute;
+      color: #373DCF;
+      left: calc(62.5% - 5rem);
+    }
+  
+    #classic {
+      position: absolute;
+      color: #373DCF;
+      left: calc(37.5% - 5rem);
+    }
+  
+    #circleUniqlo {
+      width: 5rem;
+      height: 5rem;
+    }
+  
+    #circleCoach {
+      width: 12.5rem;
+      height: 12.5rem;
+    }
+  
+    #circleGucci {
+      width: 15rem;
+      height: 15rem;
+    }
+  
+    #circlePandora {
+      width: 9rem;
+      height: 9rem;
+    }
+  
+    #circleZara {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  
+    #circleZara2 {
+      width: 7rem;
+      height: 7rem;
+    }
+  
+    #circleZara3 {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+  
+  @media only screen and (min-width: 411px) and (max-width: 720px) {
+  
+    .type {
+      font-size: 1.5rem;
+      color: white;
+      margin-left: 2.2rem;
+    }
+    
+    #disney {
+      position: absolute;
+      left: calc(12.5% - 5rem);
+    }
+  
+    #mickey {
+      position: absolute;
+      left: calc(87.5% - 5rem);
+    }
+  
+    #princess {
+      position: absolute;
+      color: #373DCF;
+      left: calc(62.5% - 5rem);
+    }
+  
+    #classic {
+      position: absolute;
+      color: #373DCF;
+      left: calc(37.5% - 5rem);
+    }
+  
+    #circleUniqlo {
+      width: 8rem;
+      height: 8rem;
+    }
+  
+    #circleCoach {
+      width: 15.5rem;
+      height: 15.5rem;
+    }
+  
+    #circleGucci {
+      width: 18rem;
+      height: 18rem;
+    }
+  
+    #circlePandora {
+      width: 12rem;
+      height: 12rem;
+    }
+  
+    #circleZara {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  
+    #circleZara2 {
+      width: 10rem;
+      height: 10rem;
+    }
+  
+    #circleZara3 {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+  

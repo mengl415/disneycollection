@@ -95,13 +95,12 @@ RandomObjectMover.prototype.stop = function() {
 
 
 // Init it
-var circleU = new RandomObjectMover(document.getElementById('circleUniqlo'), window);
-var circleC = new RandomObjectMover(document.getElementById('circleCoach'), window);
-var circleG = new RandomObjectMover(document.getElementById('circleGucci'), window);
-var circleP = new RandomObjectMover(document.getElementById('circlePandora'), window);
-var circleZ = new RandomObjectMover(document.getElementById('circleZara'), window);
-var circleZ2 = new RandomObjectMover(document.getElementById('circleZara2'), window);
-var circleZ3 = new RandomObjectMover(document.getElementById('circleZara3'), window);
+var circleUP = new RandomObjectMover(document.getElementById('circleUniqloP'), window);
+var circleELP = new RandomObjectMover(document.getElementById('circleELP'), window);
+var circleAP = new RandomObjectMover(document.getElementById('circleAldoP'), window);
+var circleA2P = new RandomObjectMover(document.getElementById('circleAldo2P'), window);
+var circleP1 = new RandomObjectMover(document.getElementById('circlePandoraP'), window);
+var circleP2 = new RandomObjectMover(document.getElementById('circlePandora2P'), window);
 
 
 /*
@@ -126,71 +125,64 @@ document.getElementById('speed').addEventListener('keyup', function(){
 
 // Start it off
 
-circleU.start(); 
-circleC.start();
-circleG.start(); 
-circleP.start();
-circleZ.start();
-circleZ2.start();
-circleZ3.start();
+circleUP.start(); 
+circleELP.start();
+circleAP.start(); 
+circleA2P.start();
+circleP1.start();
+circleP2.start();
 
-document.getElementById("circleUniqlo").addEventListener("mouseover", function(){
-  circleU.stop();
+
+document.getElementById("circleUniqloP").addEventListener("mouseover", function(){
+  circleUP.stop();
 });
-document.getElementById("circleUniqlo").addEventListener("mouseout", function(){
-  circleU.start();
-});
-
-
-
-document.getElementById("circleCoach").addEventListener("mouseover", function(){
-  circleC.stop();
-});
-document.getElementById("circleCoach").addEventListener("mouseout", function(){
-  circleC.start();
+document.getElementById("circleUniqloP").addEventListener("mouseout", function(){
+  circleUP.start();
 });
 
 
 
-document.getElementById("circleGucci").addEventListener("mouseover", function(){
-  circleG.stop();
+document.getElementById("circleELP").addEventListener("mouseover", function(){
+  circleELP.stop();
 });
-document.getElementById("circleGucci").addEventListener("mouseout", function(){
-  circleG.start();
-});
-
-
-
-document.getElementById("circlePandora").addEventListener("mouseover", function(){
-  circleP.stop();
-});
-document.getElementById("circlePandora").addEventListener("mouseout", function(){
-  circleP.start();
+document.getElementById("circleELP").addEventListener("mouseout", function(){
+  circleELP.start();
 });
 
 
 
-document.getElementById("circleZara").addEventListener("mouseover", function(){
-  circleZ.stop();
+document.getElementById("circleAldoP").addEventListener("mouseover", function(){
+  circleAP.stop();
 });
-document.getElementById("circleZara").addEventListener("mouseout", function(){
-  circleZ.start();
-});
-
-
-
-document.getElementById("circleZara2").addEventListener("mouseover", function(){
-  circleZ2.stop();
-});
-document.getElementById("circleZara2").addEventListener("mouseout", function(){
-  circleZ2.start();
+document.getElementById("circleAldoP").addEventListener("mouseout", function(){
+  circleAP.start();
 });
 
 
 
-document.getElementById("circleZara3").addEventListener("mouseover", function(){
-  circleZ3.stop();
+document.getElementById("circleAldo2P").addEventListener("mouseover", function(){
+  circleA2P.stop();
 });
-document.getElementById("circleZara3").addEventListener("mouseout", function(){
-  circleZ3.start();
+document.getElementById("circleAldo2P").addEventListener("mouseout", function(){
+  circleA2P.start();
 });
+
+
+
+document.getElementById("circlePandoraP").addEventListener("mouseover", function(){
+  circleP1.stop();
+});
+document.getElementById("circlePandoraP").addEventListener("mouseout", function(){
+  circleP1.start();
+});
+
+
+
+document.getElementById("circlePandora2P").addEventListener("mouseover", function(){
+  circleP2.stop();
+});
+document.getElementById("circlePandora2P").addEventListener("mouseout", function(){
+  circleP2.start();
+});
+
+

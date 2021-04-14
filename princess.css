@@ -1,0 +1,271 @@
+body {
+    margin: 0rem;
+    background-color: #0E1161;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #B9F1FF;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: #CD7DFF;
+  }
+  
+  #boxP {
+    position: fixed;
+    border: 1px solid transparent;
+    width: 100%;
+    height: 2rem;
+    padding: 1rem;
+    text-align: center;
+    top: calc(100% - 4.3rem);
+  }
+  
+  .typeP {
+    font-size: 2rem;
+    color: white;
+    margin-left: 5rem;
+  }
+  
+  #disneyP {
+    position: absolute;
+    left: calc(12.5% - 11rem);
+  }
+  
+  #mickeyP {
+    position: absolute;
+    color: #373DCF;
+    left: calc(87.5% - 11rem);
+  }
+  
+  #princessP {
+    position: absolute;
+    left: calc(62.5% - 11rem);
+  }
+  
+  #mickeyP:hover {
+    text-decoration: none;
+    color: #B9F1FF;
+  }
+  
+  #mickeyP:active {
+    text-decoration: none;
+    color: #CD7DFF;
+  }
+  
+  #classicP {
+    position: absolute;
+    color: #373DCF;
+    left: calc(37.5% - 11rem);
+  }
+  
+  #classicP:hover {
+    text-decoration: none;
+    color: #B9F1FF;
+  }
+  
+  #classicP:active {
+    text-decoration: none;
+    color: #CD7DFF;
+  }
+  
+  #circleUniqloP {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FPrincess%203.png?v=1617976085523");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  #circleELP {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FGraphic%20Estee%20Lauder.png?v=1617976072870");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  #circleAldoP {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FPrincess%201.png?v=1617976080706");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  #circleAldo2P {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FTexture%20Jewels.png?v=1617976095629");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #circlePandoraP {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FPrincess%202.png?v=1617976082160");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #circlePandora2P {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FTexture%20Metal.png?v=1617976090620");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media only screen and (max-width: 411px) {
+    #boxP {
+      border: 1px solid transparent;
+      top: calc(100% - 3.5rem);
+    }
+  
+    .typeP {
+      font-size: 1rem;
+      color: white;
+      margin-left: 2.2rem;
+    }
+  
+    #disneyP {
+      position: absolute;
+      left: calc(12.5% - 5rem);
+    }
+  
+    #mickeyP {
+      position: absolute;
+      color: #373DCF;
+      left: calc(87.5% - 5rem);
+    }
+  
+    #princessP {
+      position: absolute;
+      left: calc(62.5% - 5rem);
+    }
+  
+    #classicP {
+      position: absolute;
+      color: #373DCF;
+      left: calc(37.5% - 5rem);
+    }
+  
+    #circleUniqloP {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  
+    #circleELP {
+      width: 12.5rem;
+      height: 12.5rem;
+    }
+  
+    #circleAldoP {
+      width: 8.5rem;
+      height: 8.5rem;
+    }
+  
+    #circleAldo2P {
+      width: 5rem;
+      height: 5rem;
+    }
+  
+    #circlePandoraP {
+      width: 10rem;
+      height: 10rem;
+    }
+  
+    #circlePandora2P {
+      width: 8.5rem;
+      height: 8.5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 411px) and (max-width: 720px) {
+    .typeP {
+      font-size: 1.5rem;
+      color: white;
+      margin-left: 2.2rem;
+    }
+    
+    #disneyP {
+      position: absolute;
+      left: calc(12.5% - 5rem);
+    }
+  
+    #mickeyP {
+      position: absolute;
+      color: #373DCF;
+      left: calc(87.5% - 5rem);
+    }
+  
+    #princessP {
+      position: absolute;
+      left: calc(62.5% - 5rem);
+    }
+  
+    #classicP {
+      position: absolute;
+      color: #373DCF;
+      left: calc(37.5% - 5rem);
+    }
+  
+    #circleUniqloP {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  
+    #circleELP {
+      width: 15.5rem;
+      height: 15.5rem;
+    }
+  
+    #circleAldoP {
+      width: 11.5rem;
+      height: 11.5rem;
+    }
+  
+    #circleAldo2P {
+      width: 8rem;
+      height: 8rem;
+    }
+  
+    #circlePandoraP {
+      width: 13rem;
+      height: 13rem;
+    }
+  
+    #circlePandora2P {
+      width: 11.5rem;
+      height: 11.5rem;
+    }
+  }
+  
