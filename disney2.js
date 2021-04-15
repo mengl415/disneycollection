@@ -1,5 +1,3 @@
-console.log("Hello world");
-
 // load Airtable library, name it Airtable
 var Airtable = require("airtable");
 console.log(Airtable);
@@ -11,9 +9,7 @@ var base = new Airtable({ apiKey: "keyzQjFfjYvxAob2b" }).base(
 
 // get airtable data, specify how to retrieve it with functions
 
-base("disney")
-  .select({})
-  .eachPage(gotPageOfItems, gotAllItems);
+base("disney").select({}).eachPage(gotPageOfItems, gotAllItems);
 
 // empty array to hold data
 const items = [];
@@ -39,13 +35,17 @@ function gotAllItems(err) {
 
   // call functions to log and show the units
   consoleLogItems();
-  showItems();
+  try {
+    showItems();
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 // just loop through the Items and console.log them
 function consoleLogItems() {
   console.log("consoleLogItems()");
-  items.forEach(item => {
+  items.forEach((item) => {
     console.log("Item:", item);
   });
 }
@@ -53,11 +53,10 @@ function consoleLogItems() {
 //loop through items, create for them and add to page
 function showItems() {
   console.log("showItems()");
-  items.forEach(item => {
+  items.forEach((item) => {
     var itemType = item.fields.type;
-    itemType.forEach(category => {
+    itemType.forEach((category) => {
       if (category == "uniqlo") {
-
         var itemContainerU = document.createElement("div");
         itemContainerU.classList.add("item-container");
         document.querySelector(".containerU").append(itemContainerU);
@@ -68,7 +67,8 @@ function showItems() {
         itemImageU.src = item.fields.image[0].url;
         itemContainerU.appendChild(itemImageU);
       }
-      if (category == "aldo"){
+
+      if (category == "aldo") {
         var itemContainerA = document.createElement("div");
         itemContainerA.classList.add("item-container");
         document.querySelector(".containerA").append(itemContainerA);
@@ -76,10 +76,40 @@ function showItems() {
         //display aldo images
         var itemImageA = document.createElement("img");
         itemImageA.classList.add("aldo-image");
+        itemImageA.classList.add("js-modal-toggle");
         itemImageA.src = item.fields.image[0].url;
         itemContainerA.appendChild(itemImageA);
+
+        //add modal container to song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        itemContainerA.append(modalContainer);
+
+        //add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        //add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = item.fields.image[0].url;
+        modalBox.append(modalImage);
+
+        //add caption to modal box
+        var itemName = document.createElement("h2");
+        itemName.classList.add("itemName");
+        itemName.innerText = item.fields.items;
+        modalBox.append(itemName);
+
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
       }
-      if (category == "coach"){
+
+      if (category == "coach") {
         var itemContainerC = document.createElement("div");
         itemContainerC.classList.add("item-container");
         document.querySelector(".containerC").append(itemContainerC);
@@ -89,7 +119,8 @@ function showItems() {
         itemImageC.src = item.fields.image[0].url;
         itemContainerC.appendChild(itemImageC);
       }
-      if (category == "el"){
+
+      if (category == "el") {
         var itemContainerE = document.createElement("div");
         itemContainerE.classList.add("item-container");
         document.querySelector(".containerE").append(itemContainerE);
@@ -99,7 +130,8 @@ function showItems() {
         itemImageE.src = item.fields.image[0].url;
         itemContainerE.appendChild(itemImageE);
       }
-      if (category == "gucci"){
+
+      if (category == "gucci") {
         var itemContainerG = document.createElement("div");
         itemContainerG.classList.add("item-container");
         document.querySelector(".containerG").append(itemContainerG);
@@ -109,7 +141,8 @@ function showItems() {
         itemImageG.src = item.fields.image[0].url;
         itemContainerG.appendChild(itemImageG);
       }
-      if (category == "pandora"){
+
+      if (category == "pandora") {
         var itemContainerP = document.createElement("div");
         itemContainerP.classList.add("item-container");
         document.querySelector(".containerP").append(itemContainerP);
@@ -119,7 +152,8 @@ function showItems() {
         itemImageP.src = item.fields.image[0].url;
         itemContainerP.appendChild(itemImageP);
       }
-      if (category == "zara"){
+
+      if (category == "zara") {
         var itemContainerZ = document.createElement("div");
         itemContainerZ.classList.add("item-container");
         document.querySelector(".containerZ").append(itemContainerZ);
@@ -129,10 +163,8 @@ function showItems() {
         itemImageZ.src = item.fields.image[0].url;
         itemContainerZ.appendChild(itemImageZ);
       }
-
     });
   });
-  
 }
 
 // function moveUp(event){

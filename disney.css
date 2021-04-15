@@ -29,9 +29,13 @@ body {
   .containerA {
     padding: 2rem;
     width: 80%;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    /* display: grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr); */
     margin-left: 3rem;
   }
   
@@ -39,6 +43,8 @@ body {
     color: white;
     font-size: 2rem;
     border: 1px solid transparent;
+    box-sizing: border-box;
+    flex-basis: 16.67%;
     margin-bottom: 10rem;
   }
 
@@ -54,9 +60,10 @@ body {
   .containerC{
     padding: 2rem;
     width: 80%;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
     margin-left: 3rem;
   }
 
@@ -64,6 +71,7 @@ body {
     color: white;
     font-size: 2rem;
     border: 1px solid transparent;
+    flex-basis: 16.67%;
     margin-bottom: 10rem;
   }
 
@@ -78,9 +86,10 @@ body {
   .containerE{
     padding: 2rem;
     width: 80%;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
     margin-left: 3rem;
   }
 
@@ -88,6 +97,7 @@ body {
     color: white;
     font-size: 2rem;
     border: 1px solid transparent;
+    flex-basis: 16.67%;
     margin-bottom: 10rem;
   }
 
@@ -102,9 +112,10 @@ body {
   .containerG{
     padding: 2rem;
     width: 80%;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
     margin-left: 3rem;
   }
 
@@ -112,6 +123,7 @@ body {
     color: white;
     font-size: 2rem;
     border: 1px solid transparent;
+    flex-basis: 16.67%;
     margin-bottom: 10rem;
   }
 
@@ -126,9 +138,10 @@ body {
 .containerP {
     padding: 2rem;
     width: 80%;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
     margin-left: 3rem;
   }
   
@@ -136,6 +149,7 @@ body {
     color: white;
     font-size: 2rem;
     border: 1px solid transparent;
+    flex-basis: 16.67%;
     margin-bottom: 10rem;
   }
   
@@ -151,9 +165,10 @@ body {
   .containerU {
     padding: 2rem;
     width: 80%;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
     margin-left: 3rem;
   }
   
@@ -161,6 +176,7 @@ body {
     color: white;
     font-size: 2rem;
     border: 1px solid transparent;
+    flex-basis: 16.67%;
     margin-bottom: 10rem;
   }
   
@@ -175,9 +191,10 @@ body {
   .containerZ {
     padding: 2rem;
     width: 80%;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
     margin-left: 3rem;
   }
   
@@ -185,6 +202,7 @@ body {
     color: white;
     font-size: 2rem;
     border: 1px solid transparent;
+    flex-basis: 16.67%;
   }
   
   .zara-image{
@@ -194,6 +212,45 @@ body {
     min-height: 100%;
   }
 
+
+  .modal-container {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: none;
+  }
+  
+  .modal-box {
+    box-sizing: border-box;
+    background: white;
+    overflow-x: scroll;
+    position: relative;
+    height: auto;
+    max-width: 600px;
+    padding: 2rem;
+  }
+  
+  .modal-image {
+      width: 200px;
+      height: auto;
+  }
+  
+  .modal-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .modal-is-active .modal-container {
+    display: flex;
+  }
+  
   
 
 

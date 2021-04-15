@@ -5,6 +5,12 @@ body {
     font-weight: 500;
   }
   
+  .ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 1;
+  }
+
   a {
     text-decoration: none;
   }
