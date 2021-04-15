@@ -4,6 +4,26 @@ body {
     color: black;
   }
   
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #B9F1FF;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: #CD7DFF;
+  }
+
+  .type {
+    font-size: 1rem;
+    color: white;
+    margin-left: 5rem;
+  }
+
   h1 {
     font-weight: 600;
     margin: 2rem;
@@ -53,7 +73,7 @@ body {
     border: 1px solid transparent;
     box-sizing: border-box;
     flex-basis: 16.67%;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
   }
 
   .aldo-image{
@@ -92,6 +112,7 @@ body {
   .modal-image {
       width: 100%;
       height: auto;
+      border: 5px dotted #B6FFE0;
   }
   
   .modal-close-btn {

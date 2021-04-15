@@ -1,0 +1,124 @@
+body {
+    background-color: #0E1161;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #B9F1FF;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: #CD7DFF;
+  }
+
+  .type {
+    font-size: 1rem;
+    color: white;
+    margin-left: 5rem;
+  }
+
+  h1 {
+    font-weight: 600;
+    margin: 2rem;
+    color: white;
+  }
+
+  h2{
+      font-weight: 500;
+      margin: 2rem;
+      font-size: 1.5rem;
+      color: black;
+  }
+
+  .item-container {
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+  }
+  
+  .item.active {
+    display: block;
+  }
+
+  /* gucci */
+  .containerG{
+    padding: 2rem;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-left: 3rem;
+  }
+
+  .gucci-container {
+    color: white;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    flex-basis: 16.67%;
+    margin-bottom: 2rem;
+  }
+
+  .gucci-image{
+    object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .modal-container {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: none;
+  }
+  
+  .modal-box {
+    box-sizing: border-box;
+    background: white;
+    overflow-x: scroll;
+    position: relative;
+    height: auto;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  
+  .modal-image {
+      width: 100%;
+      height: auto;
+      border: 5px dotted #B6FFE0;
+  }
+  
+  .modal-close-btn {
+    position: absolute;
+    font-size: 1rem;
+    color: black;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .modal-is-active .modal-container {
+    display: flex;
+  }
+  

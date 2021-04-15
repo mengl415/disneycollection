@@ -76,37 +76,8 @@ function showItems() {
         //display aldo images
         var itemImageA = document.createElement("img");
         itemImageA.classList.add("aldo-image");
-        itemImageA.classList.add("js-modal-toggle");
         itemImageA.src = item.fields.image[0].url;
         itemContainerA.appendChild(itemImageA);
-
-        //add modal container to song container
-        var modalContainer = document.createElement("div");
-        modalContainer.classList.add("modal-container");
-        itemContainerA.append(modalContainer);
-
-        //add modal box to modal container
-        var modalBox = document.createElement("div");
-        modalBox.classList.add("modal-box");
-        modalContainer.append(modalBox);
-
-        //add image to modal box
-        var modalImage = document.createElement("img");
-        modalImage.classList.add("modal-image");
-        modalImage.src = item.fields.image[0].url;
-        modalBox.append(modalImage);
-
-        //add caption to modal box
-        var itemName = document.createElement("h2");
-        itemName.classList.add("itemName");
-        itemName.innerText = item.fields.items;
-        modalBox.append(itemName);
-
-        var closeModalBtn = document.createElement("div");
-        closeModalBtn.classList.add("modal-close-btn");
-        closeModalBtn.classList.add("js-modal-toggle");
-        closeModalBtn.innerHTML = "Close";
-        modalBox.append(closeModalBtn);
       }
 
       if (category == "coach") {
