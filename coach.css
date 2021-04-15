@@ -1,39 +1,61 @@
 body {
-  background-color: #0e1161;
   font-family: "Quicksand", sans-serif;
   color: white;
+  background: rgb(197, 179, 33);
+  background: linear-gradient(
+    120deg,
+    rgba(197, 179, 33, 1) 0%,
+    rgba(150, 26, 26, 1) 24%,
+    rgba(227, 219, 228, 1) 45%,
+    rgba(83, 152, 181, 1) 77%,
+    rgba(197, 179, 33, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 a {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: none;
-    color: #B9F1FF;
-  }
-  
-  a:active {
-    text-decoration: none;
-    color: #CD7DFF;
-  }
+  text-decoration: none;
+}
 
-  .type {
-    font-size: 1rem;
-    color: white;
-    margin-left: 5rem;
-  }
+a:hover {
+  text-decoration: none;
+  color: #B9F1FF;
+}
+
+a:active {
+  text-decoration: none;
+  color: #CD7DFF;
+}
+
+.type {
+  font-size: 1rem;
+  color: white;
+  margin-left: 5rem;
+}
 
 h1 {
   font-weight: 600;
   margin: 2rem;
 }
 
-h2{
-    font-weight: 500;
-    margin: 2rem;
-    font-size: 1.5rem;
-    color: black;
+h2 {
+  font-weight: 500;
+  margin: 2rem;
+  font-size: 1.5rem;
+  color: black;
 }
 
 .item-container {
@@ -92,24 +114,24 @@ h2{
 }
 
 .modal-box {
-    box-sizing: border-box;
-      background: white;
-      overflow-x: scroll;
-      position: relative;
-      max-height: 100%;
-      max-width: 600px;
-      padding: 2rem;
-      border-radius: 2rem;
-      overflow: hidden;
+  box-sizing: border-box;
+  background: white;
+  overflow-x: scroll;
+  position: relative;
+  max-height: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 
 .modal-image {
-    width: 60%;
-    height: auto;
-    border: 5px dotted #b6ffe0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 60%;
+  height: auto;
+  border: 5px dotted #b6ffe0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-close-btn {
@@ -122,4 +144,19 @@ h2{
 
 .modal-is-active .modal-container {
   display: flex;
+}
+
+@media only screen and (max-width: 411px) {
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 5rem;
+  }
+
+  .item-container {
+    padding: .5rem;
+    height: 6rem;
+    width: 6rem;
+  }
+
 }

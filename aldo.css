@@ -1,129 +1,164 @@
 body {
-    background-color: #0E1161;
-    font-family: "Quicksand", sans-serif;
-    color: black;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: none;
-    color: #B9F1FF;
-  }
-  
-  a:active {
-    text-decoration: none;
-    color: #CD7DFF;
-  }
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  background: rgb(203, 255, 0);
+  background: linear-gradient(
+    120deg,
+    rgba(203, 255, 0, 1) 0%,
+    rgba(180, 115, 233, 1) 24%,
+    rgba(229, 118, 248, 1) 43%,
+    rgba(164, 252, 255, 1) 77%,
+    rgba(190, 255, 0, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
 
-  .type {
-    font-size: 1rem;
-    color: white;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #B9F1FF;
+}
+
+a:active {
+  text-decoration: none;
+  color: #CD7DFF;
+}
+
+.type {
+  font-size: 1rem;
+  color: white;
+  margin-left: 5rem;
+}
+
+h1 {
+  font-weight: 600;
+  margin: 2rem;
+  color: white;
+}
+
+h2 {
+  font-weight: 500;
+  margin: 2rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.item-container {
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.item.active {
+  display: block;
+}
+
+/* aldo */
+.containerA {
+  padding: 2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  /* display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr); */
+  margin-left: 3rem;
+}
+
+.aldo-container {
+  color: white;
+  font-size: 2rem;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  flex-basis: 16.67%;
+  margin-bottom: 2rem;
+}
+
+.aldo-image {
+  object-fit: cover;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  margin-top: 0rem;
+}
+
+.modal-container {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  display: none;
+}
+
+.modal-box {
+  box-sizing: border-box;
+  background: white;
+  overflow-x: scroll;
+  position: relative;
+  height: auto;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border: 5px dotted #B6FFE0;
+}
+
+.modal-close-btn {
+  position: absolute;
+  font-size: 1rem;
+  color: black;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-is-active .modal-container {
+  display: flex;
+}
+
+@media only screen and (max-width: 411px) {
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
     margin-left: 5rem;
   }
 
-  h1 {
-    font-weight: 600;
-    margin: 2rem;
-    color: white;
-  }
-
-  h2{
-      font-weight: 500;
-      margin: 2rem;
-      font-size: 1.5rem;
-      color: black;
-  }
-
   .item-container {
-    padding: 1rem;
-    border: 1px solid transparent;
-    border-radius: 2rem;
-    height: 10rem;
-    width: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
+    padding: .5rem;
+    height: 6rem;
+    width: 6rem;
   }
-  
-  .item.active {
-    display: block;
-  }
-
-  /* aldo */
-  .containerA {
-    padding: 2rem;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3rem;
-    /* display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(6, 1fr); */
-    margin-left: 3rem;
-  }
-  
-  .aldo-container{
-    color: white;
-    font-size: 2rem;
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    flex-basis: 16.67%;
-    margin-bottom: 2rem;
-  }
-
-  .aldo-image{
-    object-fit: cover;
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    margin-top: 0rem;
-  }
-
-  .modal-container {
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    display: none;
-  }
-  
-  .modal-box {
-    box-sizing: border-box;
-    background: white;
-    overflow-x: scroll;
-    position: relative;
-    height: auto;
-    max-width: 600px;
-    padding: 2rem;
-    border-radius: 2rem;
-    overflow: hidden;
-  }
-  
-  .modal-image {
-      width: 100%;
-      height: auto;
-      border: 5px dotted #B6FFE0;
-  }
-  
-  .modal-close-btn {
-    position: absolute;
-    font-size: 1rem;
-    color: black;
-    top: 1rem;
-    right: 1rem;
-  }
-  
-  .modal-is-active .modal-container {
-    display: flex;
-  }
-  
+}

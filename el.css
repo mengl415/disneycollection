@@ -1,126 +1,161 @@
 body {
-    background-color: #0e1161;
-    font-family: "Quicksand", sans-serif;
-    color: white;
-  }
-  
-  a {
-      text-decoration: none;
-    }
-    
-    a:hover {
-      text-decoration: none;
-      color: #B9F1FF;
-    }
-    
-    a:active {
-      text-decoration: none;
-      color: #CD7DFF;
-    }
-  
-    .type {
-      font-size: 1rem;
-      color: white;
-      margin-left: 5rem;
-    }
-  
-  h1 {
-    font-weight: 600;
-    margin: 2rem;
-  }
-  
-  h2{
-    font-weight: 500;
-    margin: 2rem;
-    font-size: 1.5rem;
-    color: black;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  background: rgb(210, 19, 19);
+  background: linear-gradient(
+    120deg,
+    rgba(210, 19, 19, 1) 0%,
+    rgba(217, 119, 167, 1) 24%,
+    rgba(241, 236, 195, 1) 45%,
+    rgba(100, 181, 219, 1) 77%,
+    rgba(210, 19, 19, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
-  .item-container {
-    padding: 1rem;
-    border: 1px solid transparent;
-    border-radius: 2rem;
-    height: 10rem;
-    width: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .item.active {
-    display: block;
+  50% {
+    background-position: 100% 50%;
   }
-  
-   /* estee lauder */
-   .containerE{
-    padding: 2rem;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-left: 3rem;
+  100% {
+    background-position: 0% 50%;
   }
+}
 
-  .el-container {
-    color: white;
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #B9F1FF;
+}
+
+a:active {
+  text-decoration: none;
+  color: #CD7DFF;
+}
+
+.type {
+  font-size: 1rem;
+  color: white;
+  margin-left: 5rem;
+}
+
+h1 {
+  font-weight: 600;
+  margin: 2rem;
+}
+
+h2 {
+  font-weight: 500;
+  margin: 2rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.item-container {
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.item.active {
+  display: block;
+}
+
+/* estee lauder */
+.containerE {
+  padding: 2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-left: 3rem;
+}
+
+.el-container {
+  color: white;
+  font-size: 2rem;
+  border: 1px solid transparent;
+  flex-basis: 16.67%;
+  margin-bottom: 2rem;
+}
+
+.el-image {
+  object-fit: cover;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.modal-container {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  display: none;
+}
+
+.modal-box {
+  box-sizing: border-box;
+  background: white;
+  overflow-x: scroll;
+  position: relative;
+  max-height: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.modal-image {
+  width: 60%;
+  height: auto;
+  border: 5px dotted #b6ffe0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-close-btn {
+  position: absolute;
+  font-size: 1rem;
+  color: black;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-is-active .modal-container {
+  display: flex;
+}
+
+@media only screen and (max-width: 411px) {
+  h1 {
     font-size: 2rem;
-    border: 1px solid transparent;
-    flex-basis: 16.67%;
-    margin-bottom: 2rem;
+    font-weight: 600;
+    margin-left: 5rem;
   }
 
-  .el-image{
-    object-fit: cover;
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
+  .item-container {
+    padding: .5rem;
+    height: 6rem;
+    width: 6rem;
   }
-  
-  .modal-container {
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    display: none;
-  }
-  
-  .modal-box {
-      box-sizing: border-box;
-      background: white;
-      overflow-x: scroll;
-      position: relative;
-      max-height: 100%;
-      max-width: 600px;
-      padding: 2rem;
-      border-radius: 2rem;
-      overflow: hidden;
-  }
-  
-  .modal-image {
-    width: 60%;
-    height: auto;
-    border: 5px dotted #b6ffe0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .modal-close-btn {
-    position: absolute;
-    font-size: 1rem;
-    color: black;
-    top: 1rem;
-    right: 1rem;
-  }
-  
-  .modal-is-active .modal-container {
-    display: flex;
-  }
-  
+}
