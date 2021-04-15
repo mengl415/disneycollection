@@ -1,0 +1,108 @@
+body {
+    background-color: #0E1161;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+  }
+  
+  h1 {
+    font-weight: 600;
+    margin: 2rem;
+    color: white;
+  }
+
+  h2{
+      font-weight: 500;
+      margin: 2rem;
+      font-size: 1.5rem;
+      color: black;
+  }
+
+  .item-container {
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+  }
+  
+  .item.active {
+    display: block;
+  }
+
+  /* aldo */
+  .containerA {
+    padding: 2rem;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    /* display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr); */
+    margin-left: 3rem;
+  }
+  
+  .aldo-container{
+    color: white;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    flex-basis: 16.67%;
+    margin-bottom: 10rem;
+  }
+
+  .aldo-image{
+    object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    margin-top: 0rem;
+  }
+
+  .modal-container {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: none;
+  }
+  
+  .modal-box {
+    box-sizing: border-box;
+    background: white;
+    overflow-x: scroll;
+    position: relative;
+    height: auto;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  
+  .modal-image {
+      width: 100%;
+      height: auto;
+  }
+  
+  .modal-close-btn {
+    position: absolute;
+    font-size: 1rem;
+    color: black;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .modal-is-active .modal-container {
+    display: flex;
+  }
+  
