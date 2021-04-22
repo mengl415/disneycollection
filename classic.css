@@ -1,277 +1,276 @@
 body {
-    margin: 0rem;
-    background-color: #0E1161;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-  }
-  
-  .ball {
-    position: absolute;
-    border-radius: 100%;
-    opacity: 1;
+  margin: 0rem;
+  background-color: #0E1161;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #B9F1FF;
+}
+
+a:active {
+  text-decoration: none;
+  color: #CD7DFF;
+}
+
+#boxC {
+  position: fixed;
+  border: 1px solid transparent;
+  width: 100%;
+  height: 2rem;
+  padding: 1rem;
+  text-align: center;
+  top: calc(100% - 4.3rem);
+}
+
+.typeC {
+  font-size: 2rem;
+  color: white;
+  margin-left: 5rem;
+}
+
+#disneyC {
+  position: absolute;
+  left: calc(12.5% - 11rem);
+}
+
+#mickeyC {
+  position: absolute;
+  color: #373DCF;
+  left: calc(87.5% - 11rem);
+}
+
+#princessC {
+  position: absolute;
+  color: #373DCF;
+  left: calc(62.5% - 11rem);
+}
+
+#princessC:hover {
+  text-decoration: none;
+  color: #B9F1FF;
+}
+
+#princessC:active {
+  text-decoration: none;
+  color: #CD7DFF;
+}
+
+#mickeyC:hover {
+  text-decoration: none;
+  color: #B9F1FF;
+}
+
+#mickeyC:active {
+  text-decoration: none;
+  color: #CD7DFF;
+}
+
+#classicC {
+  position: absolute;
+  left: calc(37.5% - 11rem);
+}
+
+#circleGucciC {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FGraphic%20Gucci.png?v=1618003148904");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+#circleELC {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FClassics%205.png?v=1618003140400");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 3;
+}
+
+#circleCoachC {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FClassics%201.png?v=1618003131975");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+}
+
+#circleZaraC {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FClassics%204.png?v=1618003141330");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#circlePandoraC {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9;
+  background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FClassics%202.png?v=1618003132729");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#circlePandora2C {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9;
+  background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FClassics%203.png?v=1618003135166");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 411px) {
+  #boxC {
+    border: 1px solid transparent;
+    top: calc(100% - 3.5rem);
   }
 
-  a {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: none;
-    color: #B9F1FF;
-  }
-  
-  a:active {
-    text-decoration: none;
-    color: #CD7DFF;
-  }
-  
-  #boxC {
-    position: fixed;
-    border: 1px solid transparent;
-    width: 100%;
-    height: 2rem;
-    padding: 1rem;
-    text-align: center;
-    top: calc(100% - 4.3rem);
-  }
-  
   .typeC {
-    font-size: 2rem;
+    font-size: 1rem;
     color: white;
-    margin-left: 5rem;
+    margin-left: 2.2rem;
+  }
+
+  #disneyC {
+    position: absolute;
+    left: calc(12.5% - 5rem);
+  }
+
+  #mickeyC {
+    position: absolute;
+    color: #373DCF;
+    left: calc(87.5% - 5rem);
+  }
+
+  #princessC {
+    position: absolute;
+    color: #373DCF;
+    left: calc(62.5% - 5rem);
+  }
+
+  #classicC {
+    position: absolute;
+    left: calc(37.5% - 5rem);
+  }
+
+  #circleGucciC {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  #circleELC {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  #circleCoachC {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  #circleZaraC {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  #circlePandoraC {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+
+  #circlePandora2C {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 720px){
+  .typeC {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 2rem;
   }
   
   #disneyC {
     position: absolute;
-    left: calc(12.5% - 11rem);
+    left: calc(12.5% - 5rem);
   }
-  
+
   #mickeyC {
     position: absolute;
     color: #373DCF;
-    left: calc(87.5% - 11rem);
+    left: calc(87.5% - 5rem);
   }
-  
+
   #princessC {
     position: absolute;
     color: #373DCF;
-    left: calc(62.5% - 11rem);
+    left: calc(62.5% - 5rem);
   }
-  
-  #princessC:hover {
-    text-decoration: none;
-    color: #B9F1FF;
-  }
-  
-  #princessC:active {
-    text-decoration: none;
-    color: #CD7DFF;
-  }
-  
-  #mickeyC:hover {
-    text-decoration: none;
-    color: #B9F1FF;
-  }
-  
-  #mickeyC:active {
-    text-decoration: none;
-    color: #CD7DFF;
-  }
-  
+
   #classicC {
     position: absolute;
-    left: calc(37.5% - 11rem);
+    left: calc(37.5% - 5rem);
   }
   
-  #circleGucciC {
-    width: 30rem;
-    height: 30rem;
-    border-radius: 50%;
-    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FGraphic%20Gucci.png?v=1618003148904");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    position: absolute;
-    z-index: 1;
+   #circleGucciC {
+    width: 18rem;
+    height: 18rem;
   }
-  
+
   #circleELC {
-    width: 22rem;
-    height: 22rem;
-    border-radius: 50%;
-    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FClassics%205.png?v=1618003140400");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    z-index: 3;
+    width: 14rem;
+    height: 14rem;
   }
-  
+
   #circleCoachC {
-    width: 25rem;
-    height: 25rem;
-    border-radius: 50%;
-    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FClassics%201.png?v=1618003131975");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    z-index: 2;
+    width: 15.5rem;
+    height: 15.5rem;
   }
-  
+
   #circleZaraC {
-    width: 13rem;
-    height: 13rem;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 10;
-    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FClassics%204.png?v=1618003141330");
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 9.5rem;
+    height: 9.5rem;
   }
-  
+
   #circlePandoraC {
-    width: 17rem;
-    height: 17rem;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 9;
-    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FClassics%202.png?v=1618003132729");
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 11.5rem;
+    height: 11.5rem;
   }
-  
+
   #circlePandora2C {
-    width: 17rem;
-    height: 17rem;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 9;
-    background-image: url("https://cdn.glitch.com/caba9d2f-e67b-4c10-b59d-42feeb3b95aa%2FClassics%203.png?v=1618003135166");
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 11.5rem;
+    height: 11.5rem;
   }
-  
-  @media only screen and (max-width: 411px) {
-    #boxC {
-      border: 1px solid transparent;
-      top: calc(100% - 3.5rem);
-    }
-  
-    .typeC {
-      font-size: 1rem;
-      color: white;
-      margin-left: 2.2rem;
-    }
-  
-    #disneyC {
-      position: absolute;
-      left: calc(12.5% - 5rem);
-    }
-  
-    #mickeyC {
-      position: absolute;
-      color: #373DCF;
-      left: calc(87.5% - 5rem);
-    }
-  
-    #princessC {
-      position: absolute;
-      color: #373DCF;
-      left: calc(62.5% - 5rem);
-    }
-  
-    #classicC {
-      position: absolute;
-      left: calc(37.5% - 5rem);
-    }
-  
-    #circleGucciC {
-      width: 15rem;
-      height: 15rem;
-    }
-  
-    #circleELC {
-      width: 11rem;
-      height: 11rem;
-    }
-  
-    #circleCoachC {
-      width: 12.5rem;
-      height: 12.5rem;
-    }
-  
-    #circleZaraC {
-      width: 6.5rem;
-      height: 6.5rem;
-    }
-  
-    #circlePandoraC {
-      width: 8.5rem;
-      height: 8.5rem;
-    }
-  
-    #circlePandora2C {
-      width: 8.5rem;
-      height: 8.5rem;
-    }
-  }
-  
-  @media only screen and (min-width: 411px) and (max-width: 720px){
-    .typeC {
-      font-size: 1.5rem;
-      color: white;
-      margin-left: 2rem;
-    }
-    
-    #disneyC {
-      position: absolute;
-      left: calc(12.5% - 5rem);
-    }
-  
-    #mickeyC {
-      position: absolute;
-      color: #373DCF;
-      left: calc(87.5% - 5rem);
-    }
-  
-    #princessC {
-      position: absolute;
-      color: #373DCF;
-      left: calc(62.5% - 5rem);
-    }
-  
-    #classicC {
-      position: absolute;
-      left: calc(37.5% - 5rem);
-    }
-    
-     #circleGucciC {
-      width: 18rem;
-      height: 18rem;
-    }
-  
-    #circleELC {
-      width: 14rem;
-      height: 14rem;
-    }
-  
-    #circleCoachC {
-      width: 15.5rem;
-      height: 15.5rem;
-    }
-  
-    #circleZaraC {
-      width: 9.5rem;
-      height: 9.5rem;
-    }
-  
-    #circlePandoraC {
-      width: 11.5rem;
-      height: 11.5rem;
-    }
-  
-    #circlePandora2C {
-      width: 11.5rem;
-      height: 11.5rem;
-    }
-  }
-  
+}
